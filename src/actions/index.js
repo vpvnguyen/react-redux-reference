@@ -1,23 +1,9 @@
-export const increment = () => {
-  return {
-    type: "increment",
-  };
+export const counter = {
+  increment: () => ({ type: "increment" }),
+  decrement: () => ({ type: "decrement" }),
 };
 
-export const decrement = () => {
-  return {
-    type: "decrement",
-  };
-};
-
-export const signIn = () => {
-  return {
-    type: "signIn",
-  };
-};
-
-export const signOut = () => {
-  return {
-    type: "signOut",
-  };
+export const authentication = {
+  signIn: () => ({ type: "signIn" }),
+  signOut: () => ({ type: "signOut" }),
 };
