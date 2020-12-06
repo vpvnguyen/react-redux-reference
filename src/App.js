@@ -12,14 +12,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Counter {counter}</h1>
-
       <div>
+        <h1>Counter {counter}</h1>
         <button onClick={() => dispatch(increment())}>+</button>
         <button onClick={() => dispatch(decrement())}>-</button>
       </div>
 
       <div>
+        <h1>Authentication</h1>
         <button onClick={() => dispatch(signIn())}>Sign In</button>
         <button onClick={() => dispatch(signOut())}>Sign Out</button>
       </div>
