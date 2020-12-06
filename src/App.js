@@ -22,9 +22,8 @@ function App() {
         <h1>Authentication</h1>
         <button onClick={() => dispatch(signIn())}>Sign In</button>
         <button onClick={() => dispatch(signOut())}>Sign Out</button>
+        {signOn ? <h3>Signed In</h3> : <h3>Signed Out</h3>}
       </div>
-
-      {signOn ? <h3>Signed In</h3> : <h3>Signed Out</h3>}
     </div>
   );
 }
